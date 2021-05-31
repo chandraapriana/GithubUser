@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subtitle_followers">Pengikut</string>
+    <string name="subtitle_following">Mengikuti</string>
+    <string name="title_repository">Gudang</string>
+    <string name="subtitle_repository">Gudang</string>
+    <string name="title_splash_screen">TEMPAT DUNIA MEMBANGUN\nPERANGKAT LUNAK </string>
+    <string name="first_fragment_label">Fragment Pertama</string>
+    <string name="second_fragment_label">Fragment Kedua</string>
+    <string name="user_not_found">Tidak Ditemukan</string>
+    <string name="back">Kembali</string>
+
+    <string name="hello_blank_fragment">Hello fragment kosong</string>
+    <string name="search">cari</string>
+    <string name="zero_following">pengguna tidak mengikuti siapapun</string>
+    <string name="zero_followers">tidak mempunyai pengikut</string>
+    <string name="share">bagikan</string>
+    <string name="setting">pengaturan</string>
+
+    <string name="language_value">Indonesia</string>
+    <string name="title_language_preference">Pilih Bahasa</string>
+    <string name="alarm">Pengingat pada jam 09:00</string>
+    <string name="favorite_users">Pengguna Favorite</string>
+
+
+    <string name="english">inggris</string>
+
+    <string name="empty_text">Tidak Ada Favorite</string>
+
+    <string name="settings">Pengaturan</string>
+    <string name="zero_favorite">Belum Mempunyai User Favorit</string>
+
+    <string name="alarm_on">Alarm Berulang Telah Disetel</string>
+    <string name="alarm_off">Alarm Berulang Telah Dibatalkan</string>
+    <string name="alarm_message">Mari cari pengguna populer di Github</string>
+
+</resources>

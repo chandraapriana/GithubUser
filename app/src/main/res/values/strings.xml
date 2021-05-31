@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Github</string>
+    <string name="logo_name" translatable="false">Github</string>
+
+    <string name="title_activity_user_detail" translatable="false">UserDetail</string>
+
+    <string name="subtitle_followers">Followers</string>
+    <string name="subtitle_following">Following</string>
+    <string name="title_repository">Repository</string>
+    <string name="subtitle_repository">Repository</string>
+    <string name="title_splash_screen">WHERE THE WORLD\nBUILD SOFTWARE </string>
+    <string name="first_fragment_label">first fragment</string>
+    <string name="second_fragment_label">second fragment</string>
+    <string name="user_not_found">Not Found</string>
+    <string name="back">back</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="zero_following">user not following anyone</string>
+    <string name="zero_followers">doesn\'t have followers</string>
+    <string name="share">share</string>
+    <string name="setting">setting</string>
+    <string name="dummy_name" translatable="false">Jake Wharton</string>
+    <string name="dummy_username" translatable="false">JakeWharton</string>
+    <string name="fab_add" translatable="false">fab_add</string>
+    <string name="favorite_users">Favorite Users</string>
+    <string name="alarm">Reminder at 09:00</string>
+    <string name="key_alarm" translatable="false">alarm</string>
+    <string name="language" translatable="false">language</string>
+    <string name="english">english</string>
+    <string name="language_value">English</string>
+
+    <string name="reminder_alarm" translatable="false">Reminder at 09:00</string>
+    <string name="select_language" translatable="false">Select Language</string>
+    <string name="english_preference" translatable="false">English</string>
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="title_language_preference">Select Language</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+
+
+    <string name="empty_text">NO DATA</string>
+    <string name="settings">Preference</string>
+    <string name="zero_favorite">do not have a favorite user yet</string>
+    <string name="logo_image_splash_screen" translatable="false">Logo Image Splash Screen</string>
+    <string name="alarm_on">Repeating Alarm Setup</string>
+    <string name="alarm_off">Repeating Alarm Cancel</string>
+    <string name="alarm_message">Lets find popular user in Github</string>
+
+
+</resources>

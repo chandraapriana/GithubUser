@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:paddingLeft="12dp"
+    android:id="@+id/detail_container"
+    android:paddingRight="12dp"
+    tools:context=".ui.activity.UserDetailActivity">
+
+    <include
+        android:id="@+id/toolbar_detail"
+        layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_detail">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_image_detail"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/stroke"
+                android:padding="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/civ_image_detail" />
+
+            <TextView
+                android:id="@+id/tv_company_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/secondary"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_work"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_detail" />
+
+            <TextView
+                android:id="@+id/tv_location_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="@color/secondary"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_company_detail" />
+
+            <LinearLayout
+                android:id="@+id/container_repository"
+                style="@style/ContainerBox"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/container_followers"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location_detail">
+
+                <TextView
+                    android:id="@+id/tv_repository_detail"
+                    style="@style/ContainerBoxNumber" />
+
+                <TextView
+                    style="@style/ContainerBoxSubtitle"
+                    android:text="@string/subtitle_repository" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_followers"
+                style="@style/ContainerBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location_detail">
+
+                <TextView
+                    android:id="@+id/tv_followers_detail"
+                    style="@style/ContainerBoxNumber" />
+
+                <TextView
+                    style="@style/ContainerBoxSubtitle"
+                    android:text="@string/subtitle_followers"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_following"
+                style="@style/ContainerBox"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintStart_toEndOf="@+id/container_followers"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location_detail">
+
+                <TextView
+                    android:id="@+id/tv_following_detail"
+                    style="@style/ContainerBoxNumber" />
+
+                <TextView
+                    style="@style/ContainerBoxSubtitle"
+                    android:text="@string/subtitle_following" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_break"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_second"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/container_followers" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg"
+                app:flow_horizontalStyle="spread"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_break"
+                app:tabTextColor="@color/white">
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/fab_add"
+        android:focusable="true"
+        android:src="@drawable/ic_favorite_fill"
+        app:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
